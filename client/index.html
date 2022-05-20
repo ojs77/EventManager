@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" />
+
+    <title>Event Manager</title>
+
+    <style>
+        .header {
+            padding: 20px;
+            text-align: left;
+            background: #1abc9c;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        nav {
+            text-align: center;
+            color: red
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            background-color: #f6f6f6;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #eventsHeader {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            background-color: #f6f6f6;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        #home_tab {
+            background-color: #1abc9c;
+        }
+
+        #createevent_form {
+            margin-left: 33%;
+        }
+
+        #createevent_input_text_name {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #createevent_input_text_date {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #createevent_input_text_time {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #createevent_input_text_location {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #createevent_input_text_description {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #createevent_submit {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 25px;
+        }
+
+        #addcomment_input_text {
+            margin: 8px 0;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 18px;
+        }
+
+        #addcomment_input_submit {
+            margin: 8px 0;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 6px 10px;
+            font-size: 18px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li id="home_tab" class="nav-item active">
+                    <a class="nav-link" href="http://127.0.0.1:8090/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li id="create_event_tab" class="nav-item">
+                    <a class="nav-link" href="#" id="createevent">Create Event</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <h1 id="header4">Events</h1>
+    </div>
+
+    <ul id='events'></ul>
+
+    <div class="footer">
+        <p>e-vents Management ©</p>
+    </div>
+
+
+    <script src='index.js'>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig=="
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
